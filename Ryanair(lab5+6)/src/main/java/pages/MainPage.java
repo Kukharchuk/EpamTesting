@@ -22,7 +22,7 @@ public class MainPage extends Page{
         PageFactory.initElements(this.webDriver, this);
     }
 
-    /*----------------For Sign In --------------*/
+    /*For log in*/
     @FindBy(linkText = "Log in")
     private WebElement logInBtn;
 
@@ -34,9 +34,8 @@ public class MainPage extends Page{
 
     @FindBy(className = "core-btn-primary")
     private WebElement logInSubmitBtn;
-    /*------------------------------------------*/
 
-    /*------------------For Schedule ------------*/
+    /*flghts shedul.*/
     @FindBy(className = "core-input ng-pristine ng-untouched ng-valid ng-not-empty")
     private List<WebElement> inputs;
 
@@ -51,9 +50,8 @@ public class MainPage extends Page{
 
     @FindBy(className = "yyyy")
     private List <WebElement> flightDateYear;
-    /*-------------------------------------------*/
 
-    /*-----------For Language Changing ----------*/
+    /*Change lang*/
     @FindBy(xpath="//a[@className='ico-flag']/..")
     WebElement changeLanguageBtn;
 
@@ -81,11 +79,11 @@ public class MainPage extends Page{
         inputs.get(1).sendKeys(from);
         inputs.get(2).sendKeys(to);
         flightDateDay.get(1).sendKeys(day1);
-        flightDateDay.get(1).sendKeys(month1);
-        flightDateDay.get(1).sendKeys(year1);
+        flightDateMonth.get(1).sendKeys(month1);
+        flightDateYear.get(1).sendKeys(year1);
         flightDateDay.get(2).sendKeys(day2);
-        flightDateDay.get(2).sendKeys(month2);
-        flightDateDay.get(2).sendKeys(year2);
+        flightDateMonth.get(2).sendKeys(month2);
+        flightDateYear.get(2).sendKeys(year2);
         flightsSubmitBtn.submit();
     }
 

@@ -20,7 +20,7 @@ public class SearchCheapFlightsPage extends Page {
         PageFactory.initElements(this.webDriver, this);
     }
 
-    /*--------------- For Searching chepiest flights -------------*/
+    /*For Searching chepiest flights*/
     @FindBy(xpath = "//input[@aria-labelledby='label-departure-input']")
     private WebElement fromCountry;
 
@@ -30,15 +30,13 @@ public class SearchCheapFlightsPage extends Page {
     @FindBy(xpath = "//div[@class='lets-go']/button")
     private WebElement letsGoBtn;
 
-    /*--------------------------------------------------*/
 
-    /*------------------- Related Pages  -------------*/
+    /*Contact us page*/
     @FindBy(linkText = "Contact us")
     WebElement contactUsLink;
 
-    /*--------------------------------------------------*/
 
-    /*------- Go To The Help Page ------------*/
+    /*Terms of use page*/
     @FindBy(linkText = "Terms of Use")
     WebElement termsLink;
     /*--------------------------------------------------*/

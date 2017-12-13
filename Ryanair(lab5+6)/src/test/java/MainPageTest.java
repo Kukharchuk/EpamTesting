@@ -16,7 +16,6 @@ public class MainPageTest {
 
     private final String FROM_CITY           = "Dublin";
     private final String TO_CITY             = "Bucharest";
-    private final String DAY                = "22/12/2017";
 
     private final String LOGIN               = "nigaiakio@gmail.com";
     private final String PASSWORD            = "Testpass12345";

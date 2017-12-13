@@ -25,7 +25,7 @@ public class DestinationsPage extends Page {
         logger.info("Destination page opened");
     }
 
-    /*-------find airports where you can fly from choosen ccountry---------*/
+    /*find airports where you can fly from choosen ccountry*/
     @FindBy(xpath = "//input[@aria-labelledby='label-airport-selector-from']")
     WebElement countryFromStart;
     @FindBy(xpath = "//input[@translate='common.buttons.lets_go']")
@@ -34,14 +34,14 @@ public class DestinationsPage extends Page {
 
 
 
-    /*--------------Click On Blog----------------*/
+    /*Click On Blog*/
     @FindBy(linkText = "Blog")
     WebElement blog;
     /*------------------------------------------*/
 
 
     public void chooseFromAirport(String airport){
-        coontryFromStart.sendKeys(airport)
+        countryFromStart.sendKeys(airport)
         letsGoBtn.click();
     }
 
