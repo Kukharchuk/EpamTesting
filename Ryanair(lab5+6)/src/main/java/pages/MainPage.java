@@ -32,11 +32,11 @@ public class MainPage extends Page{
     @FindBy(name = "password")
     private WebElement inputPassword;
 
-    @FindBy(className = "core-btn-primary")
+    @FindBy(cssSelecor = "type[submit]")
     private WebElement logInSubmitBtn;
 
     /*flghts shedul.*/
-    @FindBy(className = "core-input ng-pristine ng-untouched ng-valid ng-not-empty")
+    @FindBy(cssSelector = "aria-labelledby[label-airport-selector-from]")
     private List<WebElement> inputs;
 
     @FindBy(cssSelector = "div.col-flight-search-right>button")
@@ -52,7 +52,7 @@ public class MainPage extends Page{
     private List <WebElement> flightDateYear;
 
     /*Change lang*/
-    @FindBy(xpath="//a[@className='ico-flag']/..")
+    @FindBy(cssSelector = "ui-sref[header.markets]")
     WebElement changeLanguageBtn;
 
     @FindBy(lintText = "Italy")

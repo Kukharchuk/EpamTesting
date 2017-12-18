@@ -26,18 +26,18 @@ public class HelpCenterPage extends Page {
     }
 
     /*search information*/
-    @FindBy(xpath = "//div[@class='search-text']/input")
+    @FindBy(cssSelecor = "div.search-text>input")
     WebElement searchArea;
     @FindBy(xpath = "//input[@value='search']")
     WebElement searchBtn;
 
 
     /*One of 5 top questions*/
-    @FindBy(linkText = "Help Centre for Winter Schedule Changes ")
+    @FindBy(partialLinkText = "Help Centre for ")
     WebElement top5Questions;
 
     /*Baggage Info*/
-    @FindBy(xpath = "//a[@href='/fi/en/useful-info/help-centre/faq-overview/Baggage']")
+    @FindBy(cssSelecor = "a[ng-href$='/Baggage']")
     WebElement baggageInfoLink;
 
 

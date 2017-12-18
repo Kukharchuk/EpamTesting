@@ -26,9 +26,9 @@ public class DestinationsPage extends Page {
     }
 
     /*find airports where you can fly from choosen ccountry*/
-    @FindBy(xpath = "//input[@aria-labelledby='label-airport-selector-from']")
+    @FindBy(cssSelector = "aria-labelledby[label-airport-selector-from]")
     WebElement countryFromStart;
-    @FindBy(xpath = "//input[@translate='common.buttons.lets_go']")
+    @FindBy(cssSelector = "translate[common.buttons.lets_go]")
     WebElement letsGoBtn;
     /*------------------------------------------*/
 
