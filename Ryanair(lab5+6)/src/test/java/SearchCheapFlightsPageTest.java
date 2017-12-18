@@ -12,7 +12,7 @@ import driver.Driver;
 
 import java.util.concurrent.TimeUnit;
 
-public class SearchCheapFlightPage {
+public class SearchCheapFlightPageTest {
     private SearchCheapFlightPageSteps steps;
 
     private final String FROM = "Dole";
